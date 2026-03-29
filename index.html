@@ -1,46 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="ta">
 <head>
-<title>Nagendra Portfolio</title>
-
-<style>
-body {
-  font-family: Arial;
-  text-align: center;
-  background: #f2f2f2;
-}
-
-.container {
-  margin-top: 50px;
-}
-
-img {
-  width: 150px;
-  border-radius: 50%;
-}
-
-h1 {
-  color: #333;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagendra Prasath - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', system-ui, sans-serif; }
+    </style>
 </head>
+<body class="bg-gray-50">
 
-<body>
+    <!-- Hero Section with Photo -->
+    <header class="bg-gradient-to-r from-blue-700 to-indigo-600 text-white py-20">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+            <!-- Profile Photo -->
+            <div class="flex-shrink-0">
+                <img src="https://via.placeholder.com/300" 
+                     alt="Nagendra Prasath" 
+                     class="w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover border-4 border-white shadow-xl">
+            </div>
+            
+            <div class="text-center md:text-left">
+                <h1 class="text-5xl font-bold mb-3">Nagendra Prasath</h1>
+                <p class="text-2xl mb-6">Software Developer | Coimbatore</p>
+                <p class="text-lg max-w-lg">
+                    Passionate developer who loves building clean websites and learning new technologies. 
+                    Currently exploring web development and problem solving.
+                </p>
+            </div>
+        </div>
+    </header>
 
-<div class="container">
+    <!-- About -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+            <p class="text-lg text-gray-600 leading-relaxed text-center">
+                Hi, I'm Nagendra from Coimbatore. I enjoy creating digital experiences and constantly improving my skills 
+                in programming and design.
+            </p>
+        </div>
+    </section>
 
-<h1>Nagendra Prasath</h1>
+    <!-- Skills -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">My Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow text-center">
+                    <h3 class="font-semibold text-xl mb-4 text-blue-600">Frontend</h3>
+                    <p class="text-gray-600">HTML5, CSS3, JavaScript, Tailwind CSS, Bootstrap</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow text-center">
+                    <h3 class="font-semibold text-xl mb-4 text-green-600">Programming</h3>
+                    <p class="text-gray-600">Python, JavaScript, C/C++ Basics</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow text-center">
+                    <h3 class="font-semibold text-xl mb-4 text-purple-600">Tools & Others</h3>
+                    <p class="text-gray-600">Git & GitHub, VS Code, Photo Editing, Quick Learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<p>Hi, I'm Nagendra. Welcome to my personal portfolio website.</p>
+    <!-- Contact -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+            <p class="text-xl mb-6">Interested in collaborating or have any questions?</p>
+            
+            <a href="mailto:yourmail@gmail.com" 
+               class="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full text-lg font-medium transition">
+                <i class="fas fa-envelope"></i> Send Email
+            </a>
+            
+            <p class="mt-10 text-gray-500">Email: yourmail@gmail.com</p>
+        </div>
+    </section>
 
-<h2>My Skills</h2>
-<p>Photo Editing | Gaming | Quick Learning</p>
-
-<h2>Contact</h2>
-<p>Email: yourmail@gmail.com</p>
-
-</div>
+    <footer class="bg-gray-900 text-white py-8 text-center text-sm">
+        © 2026 Nagendra Prasath • Built with ❤️ on GitHub Pages
+    </footer>
 
 </body>
 </html>
